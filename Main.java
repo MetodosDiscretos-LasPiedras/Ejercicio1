@@ -1,6 +1,11 @@
+import java.util.Scanner;
+
 public class Main {
   public static void main(String[] args) {
-    double resul=inverso(0);
+    Scanner entrada=new Scanner(System.in);
+     System.out.println("Ingrese un número: ");
+		 int num=entrada.nextInt();
+    int resul=cuadrado(num);
     System.out.println("El cuadrado es: "+resul);
   }
   
@@ -9,3 +14,4 @@ public class Main {
    return nro1*nro1;
    
  }
+}
